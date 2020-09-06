@@ -110,3 +110,73 @@ class ChildProperty extends Component {
   }
 }
 ...
+```
+## 컴포넌트 상태 관리하기
+값을 바꿔야 하는 경우 **state**를 사용한다
+### state로 상태 관리하기
+state는 '값을 저장하거나 변경할 수 있는 객체'로 보통 버튼을 클릭하거나 값을 입력하는 등의 이벤트와 함께 사용된다.<br>
+#### setTimeout() 함수를 통해 4초 후 state에 저장되어 있는 값을 변경하는 예제
+```
+import React from 'react';
+
+class StateExample extends React.Component{
+  constructor(props){
+    super(props);
+      this.state = {
+        loading: true,
+        formData : 'no data',
+      };
+      
+      this.handleData = this.handleData.bind(this);
+      
+      setTimeout(this.handleData, 4000);  //인자를 함수형태를 전달받는 형태를 콜백함수라 한다.
+  }
+
+  handleData() {
+    const data = 'new data';
+    const { formData } = this.state;
+
+    this.setState({
+      loading: false,
+      formData: data + formData,
+    }); 
+    console.log('loading값', this.state.loading);
+  }
+  render() {
+    return(
+      <div>
+        <span>로딩중 : {String(this.state.loading)}</span>
+        <span>결과 : {this.state.formData}</span>
+      </div>
+    );
+  }
+}
+export default StateExample;
+```
+#### state를 사용할 때 주의할 점
+1. 생성자에서 반드시 초기화 해야한다.(빈 객체라도 넣어야한다.)
+2. state값을 변경할 때는 setState() 함수를 반드시 사용해야 한다.
+3. setState() 함수는 비동기로 처리되며, setState() 코드 이후로 연결된 함수들의 실행이 완료된 시점에 화면 동기화 과정을 거친다.
+#### state값은 setState() 함수로 변경한다
+render() 함수로 화면을 그려주는 시점은 리액트 엔진이 정하기 때문이다.
+#### setState() 함수의 인자로 함수를 전달하면 이전 state값을 쉽게 읽을 수 있다
+```
+//일반 함수를 사용한 예
+handleData(data) {
+  this.setState(function(prevState){
+    const newState = {
+      loading: false,
+      formData: data + prevState.formData,
+    };
+    return newState;
+  });
+}
+
+//화살표 함수를 사용한 예
+handleData(data) {
+  this.setState(prevState => ({
+    loading: false,
+    formData: data + preState.formData
+  });
+}
+```
