@@ -30,3 +30,4 @@ NextJS에서 제공하는 [문서](https://nextjs.org/learn/basics/create-nextjs
 * 익스프레스 혹은 어떤 Node.js HTTP server로 구현이 가능
 * 바벨과 웹펙 설정으로 사용자 정의 가능<br><br>
 여기까지 읽고 나서야 우리는 NextJS를 왜 사용하고, 언제 사용하면 좋을지를 알게 되었다.
+> 출처 : <https://velog.io/@rjs1197/NextJS-%EC%9E%85%EB%AC%B8%ED%95%98%EA%B8%B0>
