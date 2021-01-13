@@ -3,4 +3,5 @@
 ## 2. [페이지 라우팅](https://github.com/ghtjd626/Study/tree/master/React/Next.js/Next.js%20%EA%B8%B0%EC%B4%88%EB%B6%80%ED%84%B0%20%EB%B3%B8%EA%B2%A9%EC%A0%81%EC%9C%BC%EB%A1%9C%20%ED%8C%8C%EB%B3%B4%EA%B8%B0/%ED%8E%98%EC%9D%B4%EC%A7%80%20%EB%9D%BC%EC%9A%B0%ED%8C%85)
 ## 3. [공용 컴포넌트 만들기](https://github.com/ghtjd626/Study/tree/master/React/Next.js/Next.js%20%EA%B8%B0%EC%B4%88%EB%B6%80%ED%84%B0%20%EB%B3%B8%EA%B2%A9%EC%A0%81%EC%9C%BC%EB%A1%9C%20%ED%8C%8C%EB%B3%B4%EA%B8%B0/%EA%B3%B5%EC%9A%A9%20%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8%20%EB%A7%8C%EB%93%A4%EA%B8%B0)
 ## 4. [라우트 - 유동적인 주소 사용하기](https://github.com/ghtjd626/Study/tree/master/React/Next.js/Next.js%20%EA%B8%B0%EC%B4%88%EB%B6%80%ED%84%B0%20%EB%B3%B8%EA%B2%A9%EC%A0%81%EC%9C%BC%EB%A1%9C%20%ED%8C%8C%EB%B3%B4%EA%B8%B0/%EB%9D%BC%EC%9A%B0%ED%8A%B8%20-%20%EC%9C%A0%EB%8F%99%EC%A0%81%EC%9D%B8%20%EC%A3%BC%EC%86%8C%20%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0)
+## 5. [외부 데이터 가져오기]()
 > 출처 : https://velopert.com/3293
